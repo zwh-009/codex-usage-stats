@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-windows-usage-tool"
+version = "0.1.0"
+description = "Local Windows desktop tool for Codex usage statistics."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6>=6.7",
+    "PySide6-Fluent-Widgets>=1.11",
+    "pyqtgraph>=0.13",
+    "matplotlib>=3.8",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+]
+
+[project.scripts]
+codex-usage-tool = "codex_usage_tool.web_desktop:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
