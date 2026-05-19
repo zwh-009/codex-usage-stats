@@ -1,7 +1,9 @@
 # Codex Windows Usage Tool
 
 本项目是一个本地 Windows 用量统计工具，用于自动读取 Codex 本地日志、计算 token 与估算花费、写入本地 SQLite，并通过 React Web UI 展示趋势、模型占比和请求明细。
+
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/a23c4dc3-689e-4be6-ac21-c2284399d47a" />
+
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/24f89f3e-744d-48e0-bc52-48cb3775d380" />
 
 
