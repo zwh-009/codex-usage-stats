@@ -36,32 +36,6 @@
 - 本地保存 SQLite：源码运行时为 `data/codex_usage.sqlite3`，打包版为 `%LOCALAPPDATA%\CodexUsageTool\codex_usage.sqlite3`
 - 支持导出 XLSX
 
-## 不做的事
-
-- 不读取 `.codex\auth.json`
-- 不上传日志或统计数据
-- 不把本地 SQLite、CSV、原始日志提交进仓库
-
-## 开源前检查
-
-仓库已默认忽略本地数据、日志、数据库、虚拟环境、Node 依赖和发布包：
-
-```text
-data/
-.venv/
-node_modules/
-frontend/node_modules/
-frontend/dist/
-release/
-*.sqlite*
-*.db
-*.csv
-*.xlsx
-*.log
-```
-
-发布源码前建议再执行一次敏感信息扫描，确认没有个人路径、日志内容或密钥进入提交。
-
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\open_source_check.ps1
 ```
